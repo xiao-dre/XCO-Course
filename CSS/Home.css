@@ -1,0 +1,373 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+}
+
+.wrapper {
+  background: url(../Assets/Header.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  height: 100%;
+  text-align: center;
+  padding: 0.8em 1.2em;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper h1 {
+  font-size: 1.5em;
+}
+
+header img {
+  width: 20%;
+}
+
+.Logo {
+  margin-right: 70%;
+}
+
+.navigation {
+  display: flex;
+  margin-top: 10%;
+  padding-bottom: 8em;
+  font-size: 1.5em;
+}
+
+.navigation li a {
+  color: white;
+  font-weight: bold;
+}
+
+.navigation li a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 1.8em;
+}
+
+.wrapper span {
+  font-size: 1em;
+  color: orange;
+}
+
+.button-1 {
+  padding-top: 2em;
+}
+
+.button {
+  border-radius: 6px;
+  padding: 1.2em;
+  font-size: 1.2em;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  box-shadow: 2px 2px black;
+}
+
+.item {
+  display: none;
+}
+
+.toggle {
+  font-size: 2em;
+}
+
+.item {
+  display: none;
+}
+
+.toggle {
+  font-size: 2em;
+}
+
+.about {
+  width: 100%;
+  text-align: center;
+}
+
+.about h1 {
+  padding-bottom: 1em;
+  font-size: 3em;
+}
+
+.imgabout {
+  width: 60%;
+}
+
+.about p {
+  padding: 2em 4em;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.content-1 {
+  background-color: black;
+  padding-top: 2em;
+}
+
+.content-1 h1 {
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  padding-bottom: 1em;
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+#slider { 
+  padding-bottom: 4em;
+  overflow: hidden;
+}
+
+#slider figure img { 
+  width: 20%; 
+  float: left; 
+}
+
+#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+.content-2 {
+  padding-top: 2em;
+  text-align: center;
+}
+
+.content-2 h1{  
+  font-size: 3.5em;
+  padding-bottom: 2em;
+}
+
+.benefit img {
+  width: 20%;
+}
+
+.benefit-list-1 {
+  padding-bottom: 2em;
+}
+
+.benefit-list-2 {
+  padding-bottom: 2em;
+}
+
+.benefit h4 {
+  font-size: 1.4em;
+}
+
+.benefit p{
+  text-align: justify center;
+  padding: 1em;
+}
+
+.curriculum {
+  text-align: center;
+  background-color: black;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.curriculum p {
+  color: white;
+  font-size: 1.4em;
+}
+
+.curriculum h1 {
+  color: white;
+}
+
+.curriculum img {
+  width: 40%;
+  text-align: center;
+}
+
+.register {
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.register img {
+  width: 40%;
+}
+
+.content-3 h3 {
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
+
+.button-2 {
+  margin-top: 2em;
+  border-radius: 6px;
+  padding: 1.2em;
+  font-size: 1.2em;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  box-shadow: 2px 2px #EEEEEE;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+footer h3 {
+  font-size: 1.5em;
+}
+
+.discord-link {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.discord-link:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+@media only screen and (min-width:720px) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .Logo {
+    margin-right: 20%;
+  }
+
+  .subhead {
+    font-size: 1.4em;
+  }
+
+  .item {
+    display: block;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .about {
+    padding-bottom: 3em;
+  }
+
+  .aboutinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgabout {
+    width: 20%;
+  }
+
+  .aboutinfo p {
+    width: 30%;
+  }
+
+  #slider {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .benefit img {
+    width: 10%;
+    padding-left: 45%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .benefit p {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .benefit {
+    display: flex;
+    padding-left: 7em;
+    padding-right:7em;
+    padding-bottom: 3em;
+  }
+
+  .benefit h4 {
+    font-size: 1.8em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .benefit p {
+    margin-top: 0;
+    padding-top: 1em;
+    font-size: 1.4em;
+  }
+
+  .curriculum img {
+    width: 20%;
+  }
+
+  .content-3 {
+    display: flex;
+  }
+
+  .content-3 img{
+    width: 20%;
+    padding-left: 27%;
+  }
+
+  .content-3 h3 {
+    padding-top: 20%;
+  }
+
+}
